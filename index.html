@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Graphic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-script.js"></script>
+</head>
+
+<body>
+    <section class="header">
+        <div class="presentation-design">
+            <div class="container">
+                <div class="presentation">
+                    <div class="presentation-content">
+                        <h5>PRESENTATION BY DESIGN</h5>
+                        <h1>Frustrated with how much time your team are spending on presentation work?</h1>
+                    </div>
+                    <div class="presentation-img">
+                        <img class="worried active-img" src="images/banner_bg.svg" alt="">
+                        <img class="smiling" src="images/banner_bg 2.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="three-step-section">
+        <div class="container">
+            <div class="question-answer">
+                <div class="could-save-money">
+                    <h2>Would you like to know how much you could save in productivity and money?</h2>
+                </div>
+                <div class="simple-answer">
+                    <h3>Answer <span class="simple-number">3</span> simple questions to find out</h3>
+                </div>
+            </div>
+            <div class="question-box">
+                <div class="presentation-question-box">
+                    <div class="presentation-question">
+                        <h2>1</h2>
+                        <h5>How many colleagues are regularly spending time working on their presentations?</h5>
+                    </div>
+                    <div class="presentation-input">
+                        <input type="number" placeholder="How many people..." id="employee" pattern="/^-?\d+\.?\d*$/"
+                            onKeyPress="if(this.value.length==5) return false;">
+                        <div class="warning warning-employee">please enter required fields</div>
+                    </div>
+                </div>
+                <div class="presentation-question-box">
+                    <div class="presentation-question">
+                        <h2>2</h2>
+                        <h5>On average, how much time do they each spend weekly, formatting, tidying - up or designing?
+                        </h5>
+                    </div>
+                    <div class="presentation-input">
+                        <input type="number" placeholder="How much time spend..." id="time" pattern="/^-?\d+\.?\d*$/"
+                            onKeyPress="if(this.value.length==3) return false;">
+                        <div class="warning warning-time">please enter required fields</div>
+                    </div>
+                </div>
+                <div class="presentation-question-box">
+                    <div class="presentation-question">
+                        <h2>3</h2>
+                        <h5>Please enter an average hourly wage</h5>
+                    </div>
+                    <div class="presentation-input">
+                        <input type="number" placeholder="Average hourly wage..." id="payment" pattern="/^-?\d+\.?\d*$/"
+                            onKeyPress="if(this.value.length==3) return false;">
+                        <div class="warning warning-payment">please enter required fields</div>
+                    </div>
+                </div>
+            </div>
+            <button class="submit-btn" id="calculate">Submit</button>
+        </div>
+    </section>
+
+    <section class="result-section">
+        <div class="container">
+            <div class="detail-box-main">
+                <div class="detail-box">
+                    <div class="box box-one">
+                        <div class="box-content">
+                            <p>This is how much time you spend weekly <span class="weekly-hours">16</span> hours and
+                                what this is costing
+                                <span>£<span class="weekly-cost">50</span></span>.
+                                That’s approx. <span>£<span class="monthly-cost">1500</span></span> per month
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box box-two">
+                        <div class="box-six">
+                            <div class="box-content box-content-six">
+                                <p>We can save your business <span>£<span class="weekly-saving">500</span></span> per
+                                    week
+                                    based on this example</p>
+                            </div>
+                            <div class="box-content box-content-seven">
+
+                            </div>
+                        </div>
+                        <div class="box-three">
+                            <div class="box-content box-content-one">
+                                <p></p>
+                            </div>
+                            <div class="box-content box-content-two">
+                                <p>You can reclaim <span class="hours-saving">20</span> hours of productivity every week</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="box box-four">
+                        <div class="box-content">
+                            <p>A saving of approx. <span>£<span class="monthly-saving">2000</span></span> per month and
+                                <span>£<span class="yearly-saving">24000</span></span> a year!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box box-five start-again-btn">
+                        <div class="box-content box-btn">
+                            <p>START AGAIN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <p>We can provide a link you can send to each of your team members for a more accurate result.</p>
+                <p>N.B. These figures are an estimate based on the information provided. For an accurate assessment,
+                    please <a href="#" class="get-touch">get in touch</a>, we’d be delighted to provide a free
+                    consultation and quotation based on your current working environment.</p>
+                <button class="get-touch-btn"><a href="mailto:mariacasale.pbd@gmail.com">For more Information Get in
+                        Touch</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="result-not-match-section">
+        <div class="container">
+            <div class="description error-message">
+                <p>Unfortunately we cannot give you an accurate calculation at this time, please email <a
+                        href="mailto:mariacasale.pbd@gmail.com" style="color: #FF4600;">mariacasale.pbd@gmail.com </a>so
+                    we can offer you a personalised quote, thank you.</p>
+                <button class="get-touch-btn"><a href="mailto:mariacasale.pbd@gmail.com">For more Information Get in
+                        Touch</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="present-design">
+            <a href="https://www.presentationbydesign.co.uk/" target="_blank">PRESENTATION BY DESIGN</a>
+        </div>
+    </section>
+
+
+    <!-- <div style="margin-top: 100px;">
+        <div>
+            <p>1. How many people in your team/department/organisation regularly work on presentations?</p>
+            <div class="warning warning-radio">please Select required fields</div>
+            <br>
+            <input type="number" id="employee" name="quantity">
+            <div class="warning warning-employee">please enter required fields</div>
+        </div>
+        <div>
+            <p>2. How much time do they each spend weekly formatting/tidying up/designing?</p>
+            <input type="number" id="time" name="quantity">
+            <div class="warning warning-time">please enter required fields</div>
+        </div>
+        <div>
+            <p>3. Average hourly wage?</p>
+            <input type="number" id="payment" name="quantity">
+            <div class="warning warning-payment">please enter required fields</div>
+        </div>
+        <br>
+        <div>
+            <input type="submit" id="calculate" value="Submit">
+        </div>
+
+        <div class="data-calculate">
+            <div>
+                <p>Your <span class="category-select">team/department/organisation</span> is spending <b><span
+                            class="weekly-hours"></span></b> hrs per week on presentation work, that's a cost of
+                    <b>&pound;<span class="weekly-cost"></span></b>. Which equates to approx. <b>&pound;<span
+                            class="monthly-cost"></span></b> per month
+                </p>
+            </div>
+            <div>
+                <p>Reclaim <b><span class="weekly-hours"></span></b> hrs per week in productivity and save your business
+                    <b>&pound;<span class="weekly-saving"></span></b>
+                </p>
+            </div>
+            <div>
+                <p>On average, that's a saving of <b>&pound;<span class="monthly-saving"></span></b> per month and
+                    <b>&pound;<span class="yearly-saving"></span></b> per year
+                </p>
+            </div>
+        </div>
+    </div> -->
+
+    <script>
+        $(document).ready(function () {
+            $("#calculate").click(function () {
+                hourly_payment = 35;  // Manually hourly charges
+                employee_val = $("#employee").val();
+                time_val = $("#time").val();
+                payment_val = $("#payment").val();
+
+                if (!$("#employee").val()) {
+                    $(".warning-radio").removeClass("active-war");
+                    $(".warning-employee").addClass("active-war");
+                } else if (!$("#time").val()) {
+                    $(".warning-employee").removeClass("active-war");
+                    $(".warning-time").addClass("active-war");
+                } else if (!$("#payment").val()) {
+                    $(".warning-time").removeClass("active-war");
+                    $(".warning-payment").addClass("active-war");
+                } else if (payment_val < hourly_payment) {
+                    $(".three-step-section").addClass("non-active");
+                    $(".result-not-match-section").addClass("active");
+                } else {
+                    $(".three-step-section").addClass("non-active");
+                    $(".result-section").addClass("active");
+                    $(".warning-payment").removeClass("active-war");
+                    weekly_hours = employee_val * time_val;
+                    $(".weekly-hours").text(weekly_hours);
+                    weekly_cost = weekly_hours * payment_val;
+                    $(".weekly-cost").text(numberWithCommas(weekly_cost));
+                    twenty_five_percentage = (weekly_hours / 100) * 25;
+                    our_weekly_hours = Math.floor(weekly_hours - twenty_five_percentage);
+                    monthly_cost = weekly_cost * 4;
+                    $(".monthly-cost").text(numberWithCommas(monthly_cost));
+                    our_weekly_cost = hourly_payment * our_weekly_hours;
+                    weekly_saving = weekly_cost - our_weekly_cost;
+                    $(".weekly-saving").text(numberWithCommas(weekly_saving));
+                    monthly_saving = weekly_saving * 4;
+                    $(".monthly-saving").text(numberWithCommas(monthly_saving));
+                    yearly_saving = monthly_saving * 12;
+                    $(".yearly-saving").text(numberWithCommas(yearly_saving));
+                    $(".hours-saving").text(our_weekly_hours);
+                    $(".data-calculate").addClass("active-data");
+                    $(".presentation-img .worried").removeClass("active-img");
+                    $(".presentation-img .smiling").addClass("active-img");
+                }
+            });
+
+            function numberWithCommas(text) {
+                return text.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+            $('.start-again-btn').click(function () {
+                location.reload();
+            });
+        });
+    </script>
+</body>
+
+</html>
